@@ -1,0 +1,289 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6; /* Melhorando a legibilidade */
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007bff; /* Azul para links */
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0056b3; /* Azul mais escuro no hover */
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #222;
+    color: #fff;
+    padding: 30px 0;
+    position: relative;
+    text-align: center;
+  }
+  
+  .logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  nav a {
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #007bff;
+  }
+  
+  .header-content {
+    margin-top: 50px;
+  }
+  
+  .header-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .header-content h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Seções */
+  .section {
+    padding: 60px 0;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .section-title h2 {
+    font-size: 2.5em;
+    color: #333;
+  }
+  
+  /* Seção Sobre */
+  #sobre {
+    background-color: #f8f8f8;
+  }
+  
+  /* Seção Habilidades */
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -20px;
+  }
+  
+  .skill {
+    width: 150px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .skill:hover {
+    transform: translateY(-5px);
+  }
+  
+  .skill i {
+    font-size: 3em;
+    color: #007bff;
+    margin-bottom: 15px;
+  }
+  
+  /* Seções Experiência, Formação, Certificações */
+  .experience-item,
+  .education-item, 
+  .certifications-list li {
+    margin-bottom: 30px;
+    padding-left: 20px; 
+    border-left: 5px solid #007bff; /* Linha azul à esquerda */
+  }
+  
+  .company,
+  .institution {
+    font-weight: bold;
+  }
+  
+  .date {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9em;
+  }
+  
+  /* Lista de Certificações */
+  .certifications-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Seção Contato */
+  #contato {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  #contato .section-title h2 {
+    color: #fff;
+  }
+  
+  #contato p {
+    color: #ccc;
+  }
+  
+  .contact-info {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .contact-info p {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+  
+  .contact-info i {
+    margin-right: 10px;
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul {
+      margin-top: 20px;
+    }
+  
+    nav li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .skills-grid {
+      flex-direction: column;
+    }
+  
+    .skill {
+      width: 100%;
+      margin: 20px 0;
+    }
+  
+    .experience-item,
+    .education-item,
+    .certifications-list li {
+      padding-left: 10px; /* Ajusta o espaçamento para telas menores */
+    }
+  }
+
+
+  .carousel-container {
+    position: relative;
+    width: 800px;
+    margin: 50px auto;
+  }
+  
+  .carousel {
+    overflow: hidden;
+    height: 400px;
+  }
+  
+  .carousel-item {
+    display: none;
+    height: 100%;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-item.active {
+    display: block;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 15px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
