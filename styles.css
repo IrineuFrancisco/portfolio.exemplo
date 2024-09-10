@@ -1,20 +1,40 @@
 /* Estilos gerais */
+
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-   
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
 .pacifico-regular {
   font-family: "Pacifico", cursive;
   font-weight: 400;
   font-style: normal;
 }
 
-  
-  body {
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playpen+Sans:wght@100..800&family=Sevillana&display=swap');
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 100 to 800 */
+
+.sevillana-regular {
+  font-family: "Sevillana", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+.space-grotesk {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  nav{
     font-family: "Pacifico", cursive;
+  }
+  body {
+    font-family: "Sevillana", cursive;
     background-color: #f8f8f8;
     color: #333;
     line-height: 1.6; /* Melhorando a legibilidade */
